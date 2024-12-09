@@ -1,0 +1,156 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  header .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  header .btn:hover {
+    background-color: #ff6347;
+    color: #333;
+  }
+  
+  /* Menu Section */
+  #menu {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  #menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .food-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .food-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .food-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .food-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .food-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .food-item button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .food-item button:hover {
+    background-color: #333;
+  }
+  
+  /* Cart Section */
+  #cart {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+  }
+  
+  #cart h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-total {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
