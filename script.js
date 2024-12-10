@@ -7,7 +7,7 @@ const foodItems = [
   
   let cart = [];
   
-  // Function to display food items
+ 
   function displayMenu() {
     const menuContainer = document.getElementById('menu-container');
     menuContainer.innerHTML = foodItems.map(item => `
@@ -20,14 +20,13 @@ const foodItems = [
     `).join('');
   }
   
-  // Function to add items to the cart
   function addToCart(id) {
     const item = foodItems.find(food => food.id === id);
     cart.push(item);
     displayCart();
   }
   
-  // Function to display cart items
+
   function displayCart() {
     const cartItems = document.getElementById('cart-items');
     cartItems.innerHTML = cart.map((item, index) => `
@@ -40,24 +39,23 @@ const foodItems = [
     updateTotal();
   }
   
-  // Function to remove items from cart
   function removeFromCart(index) {
     cart.splice(index, 1);
     displayCart();
   }
   
-  // Function to update the total amount
+
   function updateTotal() {
     const total = cart.reduce((acc, item) => acc + item.price, 0);
     document.getElementById('cart-total').innerText = total;
   }
   
-  // Scroll to the menu section
+ 
   function scrollToMenu() {
     document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
   }
   
-  // Event listener for "Place Order" button
+
   document.getElementById('place-order-btn').addEventListener('click', () => {
     alert('Order placed successfully!');
     cart = [];
